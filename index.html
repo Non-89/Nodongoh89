@@ -1,25 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>럭키추첨기</title>
+    <title>럭키추첨기 - 행운의 번호를 받아보세요</title>
+    <meta name="description" content="럭키추첨기는 재미를 위해 행운의 번호를 생성해주는 웹사이트입니다. 오늘 당신의 행운을 시험해보세요!">
     <link rel="stylesheet" href="style-v3.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6072971519757202"
      crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="theme-switch-container">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-    </div>
-    <div class="container">
-        <h1>럭키추첨기</h1>
-        <div id="lotto-numbers" class="lotto-numbers-container"></div>
-        <button id="generate-btn" class="generate-btn">행운받기</button>
-    </div>
+
+    <header>
+        <nav>
+            <a href="#generator" class="nav-logo">럭키추첨기</a>
+            <ul class="nav-menu">
+                <li><a href="#generator">홈</a></li>
+                <li><a href="#how-to-use">사용 방법</a></li>
+                <li><a href="#disclaimer">고지 사항</a></li>
+            </ul>
+            <div class="theme-switch-container">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="generator" class="content-section">
+            <div class="container">
+                <h1>럭키추첨기</h1>
+                <p class="subtitle">버튼을 눌러 당신의 행운 번호를 받아보세요!</p>
+                <div id="lotto-numbers" class="lotto-numbers-container"></div>
+                <button id="generate-btn" class="generate-btn">행운받기</button>
+            </div>
+        </section>
+
+        <section id="how-to-use" class="content-section">
+            <div class="container">
+                <h2>사용 방법</h2>
+                <p>
+                    '행운받기' 버튼을 클릭하면, 1부터 45까지의 숫자 중 무작위로 6개 숫자가 5줄 생성됩니다.
+                    이 번호는 순전히 재미를 위한 것이며, 생성된 번호를 자유롭게 활용해보세요.
+                    매일 새로운 행운의 기운을 얻고 싶을 때, 럭키추첨기를 찾아주세요!
+                </p>
+            </div>
+        </section>
+
+        <section id="disclaimer" class="content-section">
+            <div class="container">
+                <h2>고지 사항</h2>
+                <p>
+                    본 웹사이트에서 제공하는 번호는 컴퓨터 알고리즘에 의해 무작위로 생성된 것입니다.
+                    이는 오락 및 재미를 위한 목적으로만 제공되며, 특정 결과나 당첨을 보장하지 않습니다.
+                    생성된 번호의 사용으로 인해 발생하는 어떠한 결과에 대해서도 본 웹사이트는 책임을 지지 않습니다.
+                    모든 결정과 책임은 사용자 본인에게 있습니다.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 럭키추첨기. All rights reserved.</p>
+    </footer>
+
     <script src="main-v3.js"></script>
 </body>
 </html>
