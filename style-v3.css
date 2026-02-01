@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #121212;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(220, 80%, 30%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(280, 70%, 40%) 0, transparent 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 50px 70px;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+    width: 90%;
+    max-width: 800px;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.lotto-numbers-container {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    gap: 20px; /* 각 줄 사이의 간격 */
+    margin-bottom: 40px;
+    min-height: 250px; /* 5줄이 표시될 충분한 공간 확보 */
+}
+
+.lotto-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* 공 사이의 간격 */
+}
+
+.generate-btn {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    padding: 20px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    box-shadow: 0 0 20px #eee;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.generate-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

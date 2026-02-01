@@ -1,14 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Lucky Number</title>
+    <link rel="stylesheet" href="style-v3.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <div class="container">
+        <!-- 제목을 눈에 띄게 변경하여 배포 확인 -->
+        <h1>Version 3: 5줄 생성기</h1>
+        <div id="lotto-numbers" class="lotto-numbers-container"></div>
+        <button id="generate-btn" class="generate-btn">Get Lucky Numbers</button>
+    </div>
+    <script src="main-v3.js"></script>
 </body>
 </html>
