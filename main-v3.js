@@ -87,3 +87,21 @@ generateBtn.addEventListener('click', () => {
         generateBtn.disabled = false;
     }, totalRows * 400 + numbersPerRow * 150);
 });
+
+// Theme switcher logic
+const themeToggle = document.getElementById('checkbox');
+
+themeToggle.addEventListener('change', () => {
+    if (themeToggle.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+// Apply saved theme on page load
+const savedTheme = localStorage.getItem('theme') || 'light';
+document.documentElement.setAttribute('data-theme', savedTheme);
+themeToggle.checked = savedTheme === 'dark';
